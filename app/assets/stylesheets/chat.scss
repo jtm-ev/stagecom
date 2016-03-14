@@ -8,7 +8,8 @@
 }
 
 #message {
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #message_container {
@@ -17,7 +18,8 @@
   right:0;
   bottom:50px;
   left:0;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #input {

@@ -23,15 +23,4 @@ $ ->
 $(document).on 'keypress', '[data-behavior~=username]', (event) ->
   if event.keyCode is 13
     document.cookie="user= " + event.target.value
-    $ ->
-      $(blurRadius: 10).animate { blurRadius: 0 },
-        duration: 500
-        easing: 'swing'
-        step: ->
-          $('#content').css
-            '-webkit-filter': 'blur(' + @blurRadius + 'px)'
-            'filter': 'blur(' + @blurRadius + 'px)'
-          return
-      return
-    $('#login').fadeOut 'slow'
     location.reload()

@@ -1,7 +1,9 @@
 <div id="content">
   <div id="message_container" class="container">
-    <div id="messages">
-      <%= render @messages %>
+    <div id="messages" class="ui one column grid">
+      <% @messages.each do |message| %>
+        <%= render partial: 'messages/message', locals: { message: message,  alignment: own_message(message)} %>
+      <% end %>
     </div>
   </div>
 
@@ -9,7 +11,9 @@
     <div class="ui large input">
       <input type="text" data-behavior="room_speaker" placeholder="Nachricht">
     </div>
+    <div id="button_pyro" class="ui button">Pyro</div>
   </form>
+
 </div>
 
 <div id="login" class="ui center aligned piled segment">
