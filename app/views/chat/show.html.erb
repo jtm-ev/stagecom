@@ -1,0 +1,20 @@
+<div id="content">
+  <div id="message_container" class="container">
+    <div id="messages">
+      <%= render @messages %>
+    </div>
+  </div>
+
+  <form id="input">
+    <div class="ui large input">
+      <input type="text" data-behavior="room_speaker" placeholder="Nachricht">
+    </div>
+  </form>
+</div>
+
+<div id="login" class="ui center aligned piled segment">
+  <h1 class="ui header">JTM StageCom</h1>
+  <div class="ui input">
+    <input id="user_field" type="text" placeholder="Name" data-behavior="username">
+  </div>
+</div>

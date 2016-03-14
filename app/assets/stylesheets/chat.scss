@@ -1,0 +1,38 @@
+// Place all the styles related to the chat controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#content {
+  transition: all 700ms ease-out;
+  filter: blur(10px);
+}
+
+#message {
+  margin: 10px;
+}
+
+#message_container {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:50px;
+  left:0;
+  overflow: auto;
+}
+
+#input {
+  position: fixed;
+  height: 50px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+}
+
+#login {
+  position:absolute;
+  width: 400px;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 10;
+}

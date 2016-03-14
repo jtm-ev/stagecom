@@ -1,0 +1,19 @@
+<div id="message" class="message">
+  <% if (own_message(message)) %>
+    <% alignment = "right" %>
+  <% else %>
+    <% alignment = "left" %>
+  <% end %>
+  <div class="ui <%= alignment %> aligned segment">
+    <div class="ui comments">
+      <div class="comment">
+        <div class="content">
+          <a class="author"><%= message.user %></a>
+          <div class="text">
+            <%= message.content %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
